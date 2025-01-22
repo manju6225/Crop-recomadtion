@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Monitoring System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mb-4">Air Quality Monitoring System</h2>
+        <form action="/predict" method="post">
+            <div class="mb-3">
+                <label for="N" class="form-label">N</label>
+                <input type="number" class="form-control" id="N" name="N" required>
+            </div>
+            <div class="mb-3">
+                <label for="P" class="form-label">P</label>
+                <input type="number" class="form-control" id="P" name="P" required>
+            </div>
+            <div class="mb-3">
+                <label for="K" class="form-label">K</label>
+                <input type="number" class="form-control" id="K" name="K" required>
+            </div>
+            <div class="mb-3">
+                <label for="temperature" class="form-label">Temperature</label>
+                <input type="number" class="form-control" id="temperature" name="temperature" required>
+            </div>
+            <div class="mb-3">
+                <label for="humidity" class="form-label">Humidity</label>
+                <input type="number" class="form-control" id="humidity" name="humidity" required>
+            </div>
+            <div class="mb-3">
+                <label for="pH" class="form-label">pH</label>
+                <input type="number" class="form-control" id="pH" name="pH" required>
+            </div>
+            <div class="mb-3">
+                <label for="rainfall" class="form-label">Rainfall</label>
+                <input type="number" class="form-control" id="rainfall" name="rainfall" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>

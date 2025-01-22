@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CropWise</title>
+    <!-- Link to your CSS if you have any -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #374151;
+            padding-top: 50px;
+            margin: 0;
+            background-image: url('cropwise.jpg'); /* Replace 'cropwise.jpg' with the URL of your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            padding: 20px;
+            position: relative; /* Required for absolute positioning of overlay */
+        }
+        /* Add this overlay class for the white effect */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity as needed */
+            z-index: 1; /* Ensure the overlay is on top of the background image */
+        }
+        .overlay:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity as needed */
+        }
+        .overlay-content {
+            z-index: 2; /* Ensure the content is on top of the overlay */
+            position: relative; /* Ensure content is stacked properly */
+            padding: 20px; /* Add padding to maintain block format */
+            max-width: 800px; /* Adjust max-width as needed */
+            margin: 0 auto; /* Center content horizontally */
+            background-color: #ffffff; /* Set background color of content */
+            border-radius: 20px; /* Add larger border radius for softer edges */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+        }
+        .overlay-content h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #374151; /* Adjust text color as needed */
+        }
+        /* Rest of your styles remain the same */
+        .team-members-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .team-member {
+            width: 48%; /* Adjust width as needed */
+            padding: 10px;
+            border-radius: 20px; /* Add larger border radius for softer edges */
+            background-color: #cccccc; /* Set the background color of the team member blocks to gray */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+        }
+        .team-member:nth-child(2n) {
+            margin-left: 4%; /* Adjust margin between blocks */
+        }
+        .team-member h2 {
+            margin-bottom: 5px;
+        }
+        .team-member p {
+            margin-bottom: 5px;
+        }
+        .guide {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Add overlay class here -->
+    <div class="overlay"></div>
+    <div class="overlay-content">
+        <h1>CropWise Team</h1>
+        <div class="guide">
+            <h2>Guide</h2>
+            <p><strong>Name:</strong> Dr.Santhosh Herur </p>
+            <p><strong>Email:</strong>santoshherur@jitd.in</p>
+            <p><strong>Mobile Number:</strong>8217728722</p>
+            <p><strong>Designation:</strong> Professor & HoD,Dept,ECE JITD</p>
+        </div>
+        <div class="team-members-group">
+            <div class="team-member">
+                <h2>Team Member 1</h2>
+                <p><strong>Name:</strong> MANJUNATHA M </p>
+                <p><strong>USN:</strong> 4JD20EC024</p>
+                <p><strong>Email:</strong> manjumlegend@gmail.com</p>
+                <p><strong>Mobile Number:</strong> 9945693398</p>
+                <p><strong>Designation:</strong> Lead Developer and Data Scientist</p>
+            </div>
+            <div class="team-member">
+                <h2>Team Member 2</h2>
+                <p><strong>Name:</strong>AKASH GJ</p>
+                <p><strong>USN:</strong>4JD20EC002 </p>
+                <p><strong>Email:</strong> akashgj04@gmail.com.com</p>
+                <p><strong>Mobile Number:</strong>7483855317</p>
+                <p><strong>Designation:</strong> Data Scientist</p>
+            </div>
+        </div>
+        <div class="team-members-group">
+            <div class="team-member">
+                <h2>Team Member 3</h2>
+                <p><strong>Name:</strong>ANITHBABA A</p>
+                <p><strong>USN:</strong> 4JD20EC003</p>
+                <p><strong>Email:</strong> anithbaba9481@gmail.com</p>
+                <p><strong>Mobile Number:</strong>6363375281</p>
+                <p><strong>Designation:</strong>Embedded  Systems Designer</p>
+            </div>
+            <div class="team-member">
+                <h2>Team Member 4</h2>
+                <p><strong>Name:</strong>BHARATH B P</p>
+                <p><strong>USN:</strong> 4JD20CS005</p>
+                <p><strong>Email:</strong>bharathbp2002@gmail.com</p>
+                <p><strong>Mobile Number:</strong>9353880215</p>
+                <p><strong>Designation:</strong> IoT Architect </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
